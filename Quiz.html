@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="contain">
+    <div class="heading">
+    <h1>QUIZ TOPIC:</h1>
+    <h2><u>About Pakistan</u></h2>
+    </div>
+    <div class="flex">
+
+    <form class="backgroundcolor">
+        <p><b>Question No 1:</b>  How many Provinces in Pakistan?</p>
+        <input type="radio" id="2" name="provinces_no" value="2">
+        <label for="2">2</label><br>
+        <input type="radio" id="4" name="provinces_no" value="4">
+        <label for="4">4</label><br>
+        <input type="radio" id="7" name="provinces_no" value="7">
+        <label for="7">7</label><br>
+        <input type="radio" id="5" name="provinces_no" value="5">
+        <label for="5">5</label><br>
+    </form>
+    <form class="backgroundcolor">
+        <p><b>Question No 2:</b>  What is the national game of Pakistan?</p>
+        <input type="radio" id="hockey" name="game" value="HOCKEY">
+        <label for="hockey">HOCKEY</label><br>
+        <input type="radio" id="cricket" name="game" value="CRICKET">
+        <label for="cricket">CRICKET</label><br>
+        <input type="radio" id="football" name="game" value="FOOTBALL">
+        <label for="football">FOOTBALL</label><br>
+        <input type="radio" id="chess" name="game" value="CHESS">
+        <label for="chess">CHESS</label><br>
+    </form>
+    
+    
+    <form class="backgroundcolor">
+        <p><b>Question 3:</b> What is the Biggest Province  of Pakistan Population Wise?</p>
+        <input type="radio" id="sindh" name="province" value="SINDH">
+        <label for="sindh">SINDH</label><br>
+        <input type="radio" id="punjab" name="province" value="PUNJAB">
+        <label for="punjab">PUNJAB</label><br>
+        <input type="radio" id="balochistan" name="province" value="BALOCHISTAN">
+        <label for="balochistan">BALOCHISTAN</label><br>
+        <input type="radio" id="kpk" name="province" value="KPK">
+        <label for="kpk">KPK</label><br>
+    </form>
+    <form class="backgroundcolor">
+        <p><b>Question 4:</b> What is the Biggest Province  of Pakistan Land Wise?</p>
+        <input type="radio" id="sindh" name="province1" value="SINDH">
+        <label for="sindh">SINDH</label><br>
+        <input type="radio" id="punjab" name="province1" value="PUNJAB">
+        <label for="punjab">PUNJAB</label><br>
+        <input type="radio" id="balochistan" name="province1" value="BALOCHISTAN">
+        <label for="balochistan">BALOCHISTAN</label><br>
+        <input type="radio" id="kpk" name="province1" value="KPK">
+        <label for="kpk">KPK</label><br>
+    </form>
+    <form class="backgroundcolor">
+     <p><b>Question No 5:</b> How was the Founder of Pakistan?</p>
+     <input type="radio" id="allamaiqbal" name="founder" value="ALLAMAIQBAL">
+        <label for="allamaiqbal">ALLAMA IQBAL</label><br>
+        <input type="radio" id="sirsyedahemadkhan" name="founder" value="SIRSYEDAHEMADKHAN">
+        <label for="sirsyedahemadkhan">Sir Syed AHEMAD KHAN</label><br>
+        <input type="radio" id="gandhi" name="founder" value="GANDHI">
+        <label for="gandhi">GANDHI</label><br>
+        <input type="radio" id="mohammadalijinnah" name="founder" value="MOHAMMADALIJINNAH">
+        <label for="mohammadalijinnah">MOHAMMAD ALI JINNAH</label>
+        <div class="button">
+            <button type="button" onclick="get_choices()" class="btn btn-primary">Submit</button>
+            </div>
+    </form>
+    </div>
+    <div class="total">
+    <p>The Choices you tick correct are <b id="marks">0</b> out of 5 .</p>
+    </div>></div>
+</body>
+<script src="quiz.js"></script>
+</html>
